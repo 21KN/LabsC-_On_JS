@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Labs 10</title>
+    <style>
+        .form-pizza {
+            display: flex;
+            justify-content: center;
+            margin: 50px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-pizza">
+    <form onsubmit="getPizza.getInfoForm()">
+        <label for="exampleInputEmail1">Название пиццы:</label>
+        <input placeholder="Введите название" onchange="getPizza.validateInput()" value='pizzaName' name="pizzaName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required type="text" name="pizzaName">
+        <label for="exampleInputEmail1">Название сосисок:</label>
+        <input placeholder="Введите название" onchange="getPizza.validateInput()" value="sausageName" name="sausageName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required type="text" name="sausageName">
+        <label for="exampleInputEmail1">Название мяса:</label>
+        <input placeholder="Введите название" onchange="getPizza.validateInput()" value="meatName" name="meatName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required type="text" name="meatName">
+        <label for="exampleInputEmail1">Название сыра:</label>
+        <input placeholder="Введите название" onchange="getPizza.validateInput()" value="cheeaseName" name="cheeaseName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required type="text" name="cheeaseName">
+        <label for="exampleInputEmail1">Название соуса:</label>
+        <input placeholder="Введите название" onchange="getPizza.validateInput()" value="sauceName" name="sauceName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required type="text" name="sauceName">
+        <button id="button-submit" class="btn btn-primary" type="submit">Отправить заказ</button>
+    </form>
+</div>
+
+<script src="Labs_10.js" async></script>
+</body>
+</html>
