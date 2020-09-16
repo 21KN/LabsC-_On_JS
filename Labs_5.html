@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Labs_5_</title>
+    <style>
+        .modal {
+            width: 250px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #id01 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .form {
+            width: 300px;
+        }
+        .iceCream {
+            width: 300px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<button
+        onclick="document.getElementById('id01').style.display='block'"
+        class="button">
+    Open Modal
+</button>
+
+<div id="id01" class="modal">
+    <div class="modal-content">
+        <div class="container">
+      <span onclick="document.getElementById('id01').style.display='none'"
+            class="button w3-display-topright"><button>Натиснiть на кнопку[закрити]</button></span>
+
+        </div>
+    </div>
+</div>
+
+<div class="form">
+        <form>
+            <h2>Форма входу</h2>
+            <label for="fname">Имя пользователя</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name">
+
+            <label for="lname">Пароль</label>
+            <input type="password" id="lname" name="password" placeholder="Your password">
+
+            <input type="submit" value="Вход">
+        </form>
+</div>
+
+<div class="iceCream">
+    <select name="ice">
+        <option value="пломбир">Пломбир</option>
+        <option value="шоколадное">Шоколадное</option>
+        <option value="ванильное">Ванильное</option>
+    </select>
+    <div class="form-ice">
+        <input type="checkbox" value="choc" placeholder="Шоколад">
+        <label for="choc">Шоколад</label>
+        <input type="checkbox" value="gor" placeholder="Орехи">
+        <label for="gor">Орехи</label>
+        <input type="checkbox" value="dg" placeholder="Джем">
+        <label for="dg">Джем</label>
+    </div>
+    <select name="ice">
+        <option value="пломбир">Яблучний</option>
+        <option value="шоколадное">Банановий</option>
+        <option value="клубничний">Клубничний</option>
+        <option value="апельсиновый">Апельсиновый</option>
+        <option value="грушевый">Грушевый</option>
+    </select>
+</div>
+
+<script src="Labs_5.js"></script>
+</body>
+</html>
