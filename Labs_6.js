@@ -61,3 +61,16 @@ class putStringToString {
 
 const putStr = new putStringToString()
 putStr.getReversMeth()
+
+class Replicator {
+
+    getNameDataWords() {
+        const cl = new GetNameDataWord()
+        const res = cl.getArgs('New cl')
+        console.log('GetNameDataWord: ', res)
+    }
+
+}
+
+const rep = new Replicator()
+rep.getNameDataWords()
